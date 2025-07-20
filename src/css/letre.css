@@ -1,0 +1,93 @@
+/* Cabeçalho geral */
+.cabecario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B263B;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #E0E1DD;
+}
+
+/* Menu hamburguer */
+.menu-toggle {
+  font-size: 2rem;
+  color: #E0E1DD;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu de navegação */
+.menu ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.menu li a {
+  color: #E0E1DD;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1B263B;
+    display: none;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Conteúdo principal da página */
+.titulo-letras {
+  text-align: center;
+  color: #E0E1DD;
+  margin: 20px 0;
+}
+
+.letras-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #415A77;
+  padding: 20px;
+  border-radius: 10px;
+  color: #E0E1DD;
+}
+
+.letra h3 {
+  color: #778DA9;
+  margin-bottom: 10px;
+}
+
+.letra p {
+  white-space: pre-line;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}

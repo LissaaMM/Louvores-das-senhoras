@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louvores das senhoras</title>
+  <link rel="stylesheet" href="./src/css/index.css" />
+  <script src="./src/js/index.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="cabecario">
+      <h1 class="logo">Louvores das senhoras</h1>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="playbacks.html">Playback</a></li>
+          <li><a href="letre.html">Letras</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="quadro-avisos">
+      <h2>Quadro de Avisos</h2>
+      <div id="aviso-conteudo">
+        <p>Aviso: Ensaio especial neste sábado às 18h. Todas as irmãs convidadas!</p>
+      </div>
+    </section>
+
+    <!-- Carrossel de Vídeos -->
+    <section class="video-carousel">
+      <h2>Louvores em Vídeo</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+        <div class="carousel-container" id="carousel">
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Louvores das Senhoras. Todos os direitos reservados.</p>
+      <p>Feito com fé e música no coração 🎶</p>
+    </div>
+
+    <div class="footer-info">
+      <h4>Regentes:</h4>
+      <ul>
+        <li>Missionária Alexandra</li>
+        <li>Irmã Erica</li>
+        <li>Irmã Naira</li>
+      </ul>
+
+      <h4>Horários:</h4>
+      <p>Ensaio e oração às <strong>18h</strong> com as irmãs Julia e Francisca Vieira.</p>
+    </div>
+  </footer>
+</body>
+</html>
